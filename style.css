@@ -1,0 +1,182 @@
+
+/* alert section */
+#alert{
+    background-color: #200fe2;
+}
+nav .vertical{
+    color: #000;
+}
+#alert p{
+    font-size: 16px;
+    color: #ffffffec;
+}
+#btn{
+    margin-top:8px;
+    height: 30px;
+    font-size: 15px;
+}
+#btn:hover{
+    background-color: #ffffff2d;
+}
+/* Navbar */
+.navbar .nav-item:hover{
+    background-color: rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
+}
+#nav-signin{
+    color: #200fe2;
+    border: 2px solid #200fe2;
+    font-weight: 500;
+}
+#nav-signin:hover{
+    background-color: #24171736;
+}
+/* Hero-silder */
+.hero-slider{
+    background-image: url(./dc-img/hero-slider.jpg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: cover;
+    border-radius: 25px;
+}
+/* Overlay Section Black */
+.hero-slider .overlay{
+    background-color: rgba(0,0,0,0.6);
+    width: 97.5%;
+    height: 100%;
+    position: absolute;
+    left: 14px;
+    top: 0;
+    border-radius: 25px;
+}
+
+.text-primary--gradient, .info-package .brand-headline {
+    background: linear-gradient(135deg, rgb(32, 15, 226) 0%, rgb(37, 44, 90) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* .hero-slider::after{
+    content: "";
+    background-color: rgba(0,0,0,0.6);
+    width: 97.5%;
+    height: 100%;
+    position: absolute;
+    left: 14px;
+    top: 0;
+    border-radius: 25px;
+} */
+/* About : Partner & Property Section */
+#about h1,.bi,.partner{
+    color: #200fe2;
+}
+.border-success{
+    --bs-border-opacity: 1;
+    border-color: rgba(var(--bs-success-rgb), var(--bs-border-opacity)) !important;
+    border-radius: 20px;
+}
+#property{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Resign Section */
+.resign{
+    height: 500px;
+    background-image: url(./dc-img/15.jpg);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: cover;
+}
+/* Resign overlay */
+.resign .overlay{
+    background: linear-gradient(to right, #f8f6f1b4, #eeeeeea8);
+    backdrop-filter:blur(5px);
+    box-shadow: 0px 0px 30px black;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    border-radius: 20px;
+}
+.resign .btn{
+    background-color: #03040646;
+    background-image: linear-gradient(315deg, rgb(37, 44, 90) 0%, rgb(32, 15, 226) 100%);
+}
+/* Footer Section */
+footer{
+    background-color: #1a1a1a;
+    color: #fff;
+}
+footer .background-figure{
+    fill: #ffff;
+    position: absolute;
+    margin-top: -150px;
+    margin-left: -220px;
+}
+
+#social-icon .btn-icon{
+    padding: 8px;
+}
+/* Responsive for Resign Section */
+@media (max-width:994px) {
+    .resign{
+        height: 490px;
+    }
+    .resign .overlay{
+        width: 50%;
+        height: 70%;
+    }
+}
+@media (max-width:758px) {
+    .resign{
+        height: 580px
+    };
+    .resign .overlay{
+        width: 50%;
+        height: 72%;
+    }
+}
+@media (max-width:450px) {
+    .resign{
+        height: 750px
+    };
+    .resign .overlay{
+        width: 70%;
+        height: 80%;
+    }
+}
+
+@media (max-width:400px) {
+    /* Hero Page */
+    .hero-slider span{
+        display: inline-block;
+        height: 10px;
+        margin:0px;
+    }
+    .hero-slider h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    .hero-slider .overlay{
+        width: 92%;
+    }
+    .hero-slider{
+       height: 350px;
+    }
+    @media (max-width:500px) {
+    .resign .overlay{
+        width: 70%;
+        height: 50%;
+        font-size: 12px;
+        left: 15%;
+        top: 25%;
+    }
+    .resign h1{
+        font-size: 25px;
+    }
+    }
+}
